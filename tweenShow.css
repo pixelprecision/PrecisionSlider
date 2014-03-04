@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.tweenSlider {
+    height: 300px;
+    float: left;
+    clear: both;
+}
+#slideshow > div {
+    position: absolute;
+    background: #333;
+    color: #f1f1f1;
+    padding: 0px;
+    width: 1000px;
+    height: 300px;
+    text-align: center;
+}
+#slideshow > div:nth-child(2n+1){
+    background: #ff3600;
+}
+.precisionNav {
+    border-bottom: 1px solid #fff;
+}
+#slideshow2 > div {
+    position: absolute;
+    background: #333;
+    color: #f1f1f1;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+#slideshow > img {
+    position: absolute;
+    background: #333;
+    color: #f1f1f1;
+    padding: 10px;
+    width: 1000px;
+    text-align: center;
+}
+#slideshow2 > img {
+    position: absolute;
+    background: #333;
+    color: #f1f1f1;
+    padding: 10px;
+    width: 1000px;
+    text-align: center;
+}
+.precisionBullets {
+    position: absolute;
+    bottom: 0;
+    height: 10px;
+    width: 100%;
+}
+.precisionBullet {
+    height: 5px;
+    background: #eee;
+    border-right: 1px solid #fff;
+    float: left;
+    position: relative;
+    cursor: pointer;
+}
+.precisionBullet:last-child {
+    border-right: none;
+}
+.precisionBullet.active {
+    background: #333;
+}
